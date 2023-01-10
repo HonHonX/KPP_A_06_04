@@ -21,7 +21,7 @@ int main () {
 	
 	int sieb[299];
 	
-	for(int i=2; i<300; i++){
+	for(int i=0; i<300; i++){
 		sieb[i]=1;
 	}
 	
@@ -36,7 +36,7 @@ int main () {
 	}
 	
 	for(int i=0; i<300; i++){
-		if(sieb[i]!=0)
+		if(sieb[i]==1)
 			sieb[i]=i+1;
 	}
 	ergebnisAusgeben(sieb,299);
