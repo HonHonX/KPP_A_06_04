@@ -1,7 +1,7 @@
 //-o output rename
 //-c cut operation
 
-Name = x
+Name = sieb
 
 default: $(Name)
 
