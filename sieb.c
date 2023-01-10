@@ -21,7 +21,7 @@ int main () {
 	int sieb[299];
 	for(int i=0; i<300; i++){
 		sieb[i]=i+1;
-		printf("%d | ", array[i]);
+		printf("%d | ", sieb[i]);
 	}
 	
 	for(int j=1;j<151;j++) {
