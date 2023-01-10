@@ -39,7 +39,7 @@ int main () {
 		}
 	}
 	
-	//arrayFuellen(sieb,size,0);
+	arrayFuellen(sieb,size,0);
 	//ergebnisAusgeben(sieb,size);
 	
 	//Ende
@@ -53,7 +53,7 @@ int arrayFuellen(int array[], int size, int count) {
 		array[count]=count+1;
 	else if (count==size-1)
 		return 0;
-	arrayFuellen(array, size, count+1);
+	arrayFuellen(array, size, ++count);
 }
 	
 	
