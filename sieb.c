@@ -32,7 +32,8 @@ int main () {
 		if(sieb[j]) { //Die Überprüfung läuft nur, wenn das j.Element des Arrays noch nicht mit einer "0" geflaggt wurde (1=wahr)
 			for(int k=2;k<=(size/2);k++) { //Die Anzahl der Schleifendurchläufe entspricht der Hälfte der Elementanzahl des Arrays
 				if((k*j) < size) { //Ist das Produkt größer als die Größe des Arrays muss nichts gemacht werden
-					sieb[(k*j)-1]=0; //Vielfache werden mit der "0" markiert und fallen als Primzahlen raus
+					int temp=(k*j)-1; //Im ersten Durchlauf kommt man zur 4, die allerdings an Element 3 gespeichert ist
+					sieb[temp]=0; //Vielfache werden mit der "0" markiert und fallen als Primzahlen raus
 				}
 		   	}
 		}
