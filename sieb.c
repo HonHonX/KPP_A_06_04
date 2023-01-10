@@ -27,12 +27,9 @@ int main () {
 	
 	for(int j=1;j<151;j++) {
 		if(sieb[j]!=0) {
-			for(int k=3;k<300;k++) {
-				int x = sieb[k];
-				printf("x");
-				int y = sieb[j];
-				if(x % y == 0) {
-					sieb[k]=0;
+			for(int k=3;k<151;k++) {
+				if(k*e<300) {
+					sieb[k*j]=0;
 				}
 		   	}
 		}
