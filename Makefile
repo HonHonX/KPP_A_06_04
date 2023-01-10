@@ -1,11 +1,16 @@
-default: x
+//-o output rename
+//-c cut operation
 
-rechner: x.o
-	gcc x.o -o x
+Name = x
+
+default: $(Name)
+
+$(Name): $(Name).o
+	gcc $(Name).o -o $(Name)
 	
-rechner.o: rechner.c
-	gcc -c x.c -o x.o
+$(Name).o: $(Name).c
+	gcc -c $(Name).c -o $(Name).o
 
 clean:
-	-rm -f x.o
-	-rm -f x
+	-rm -f $(Name).o
+	-rm -f $(Name)
