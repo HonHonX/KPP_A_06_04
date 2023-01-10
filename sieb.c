@@ -59,7 +59,7 @@ int arrayFuellen(int array[], int size, int count) {
 void ergebnisAusgeben(int array[], int size) {
     	for(int i=1; i < size; i++) {
 	    	if(array[i]!=0) 
-      			printf("%d | ",array[i]);
+      			printf("%d | ",array[i+1]);
     }
     printf("\n");
 }
