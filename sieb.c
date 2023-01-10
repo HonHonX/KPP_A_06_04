@@ -2,6 +2,7 @@
 
 //Funktions Prototypen
 void ergebnisAusgeben(int array[], int size);
+int arrayFuellen(int array[], int size, int count);
   
 
 //Hauptprogramm
@@ -17,25 +18,28 @@ int main () {
 	printf("\n *   ´´´´´´   *                ©S.Buch * ");
 	printf("\n *************************************** \n\n");
 	
-	//Array füllen+
+	//Deklaration	
+	int size=300; //Array mit 300 Elementen an den Plätzen 0-299
+	int sieb[size-1];
 	
-	int sieb[299];
-	
-	for(int i=0; i<300; i++){
+	//Setzen aller Werte des Arrays auf 1
+	for(int i=0; i<size; i++){
 		sieb[i]=1;
 	}
 	
-	for(int j=2;j<=150;j++) {
-		if(sieb[j]==1) {
-			for(int k=2;k<=150;k++) {
-				if((k*j) < 300) {
-					sieb[k*j]=0;
+	//Sieb Algorithmus
+	for(int j=2;j<=(size/2);j++) { //Die Anzahl der Schleifendurchläufe entspricht der Hälfte der Elementanzahl des Arrays
+		if(sieb[j]) { //Die Überprüfung läuft nur, wenn das j.Element des Arrays noch nicht mit einer "0" geflaggt wurde (1=wahr)
+			for(int k=2;k<=(size+/2);k++) { //Die Anzahl der Schleifendurchläufe entspricht der Hälfte der Elementanzahl des Arrays
+				if((k*j) < size { //Ist das Produkt größer als die Größe des Arrays muss nichts gemacht werden
+					sieb[k*j]=0; //Vielfache werden mit der "0" markiert und fallen als Primzahlen raus
 				}
 		   	}
 		}
 	}
 	
-	ergebnisAusgeben(sieb,299);
+	arrayFuellen(sieb,size,0);
+	ergebnisAusgeben(sieb,size);
 	
 	//Ende
 	printf("\n\n");
@@ -43,11 +47,21 @@ int main () {
 }
 
 //Funktionen
+int arrayFuellen(int array[], int size, int count) {
+	if(array[count]==1)
+		array[count]=count+1;
+	else if (count==size-1)
+		return 0;
+	arrayFuellen(sieb, size, count+1);
+}
+	
+	
 void ergebnisAusgeben(int array[], int size) {
-    for(int i=2; i < size+1; i++) {
-	    if(array[i]==1) 
-      		printf("%d | ",i);
+    	for(int i=1; i < size; i++) {
+	    	if(array[i]!=0) 
+      			printf("%d | ",i);
     }
     printf("\n");
 }
+
   
