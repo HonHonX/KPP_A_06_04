@@ -29,6 +29,7 @@ int main () {
 		if(sieb[j]!=0) {
 			for(int k=3;k<300;k++) {
 				int x = sieb[k];
+				printf("x");
 				int y = sieb[j];
 				if(x % y == 0) {
 					sieb[k]=0;
