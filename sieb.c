@@ -2,7 +2,7 @@
 
 //Funktions Prototypen
 void ergebnisAusgeben(int array[], int size);
-int arrayFuellen(int array[], int size, int count);
+int arrayFuellen(int array[], int size, int i);
   
 
 //Hauptprogramm
@@ -47,14 +47,15 @@ int main () {
 }
 
 //Funktionen
-int arrayFuellen(int array[], int size, int count) {
-	if(array[count]==1) {
-		printf("%d",array[count]);
-		//array[count]=count+1;
+int arrayFuellen(int array[], int size, int i) {
+	if(array[i]==1) {
+		printf("%d",array[i]);
+		array[i]=i+1;
 	}
-	else if (count==size-1)
+	else if (i==size-1)
 		return 0;
-	arrayFuellen(array, size, ++count);
+	i++;
+	arrayFuellen(array,size,i);
 }
 	
 	
