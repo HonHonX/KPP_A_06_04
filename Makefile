@@ -1,16 +1,13 @@
-//-o output rename
-//-c cut operation
+NAME = sieb
 
-Name = sieb
+default: $(NAME)
 
-default: $(Name)
-
-$(Name): $(Name).o
-	gcc $(Name).o -o $(Name)
+$(NAME): $(NAME).o
+	gcc $(NAME).o -o $(NAME)
 	
-$(Name).o: $(Name).c
-	gcc -c $(Name).c -o $(Name).o
+$(NAME).o: $(NAME).c
+	gcc -c $(NAME).c -o $(NAME).o
 
 clean:
-	-rm -f $(Name).o
-	-rm -f $(Name)
+	-rm -f $(NAME).o
+	-rm -f $(NAME)
