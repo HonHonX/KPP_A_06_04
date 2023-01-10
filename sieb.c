@@ -26,7 +26,6 @@ int main () {
 		printf("%d | ", sieb[i]);
 	}
 	
-	/*
 	for(int j=1;j<151;j++) {
 		if(sieb[j]!=0) {
 			for(int k=3;k<300;k++) {
@@ -37,8 +36,7 @@ int main () {
 		}
 	}
 	
-	ergebnisAusgeben(sieb,299);
-	*/
+	//ergebnisAusgeben(sieb,299);
 	
 	//Ende
 	printf("\n\n");
