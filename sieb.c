@@ -47,10 +47,8 @@ int main () {
 
 //Funktionen
 int arrayFuellen(int array[], int size, int i) {
-	if(array[i]==1) {
-		printf("%d",array[i]);
+	if(array[i]==1)
 		array[i]=i;
-	}
 	else if (i==size-1)
 		return 0;
 	i++;
