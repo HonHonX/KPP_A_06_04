@@ -24,8 +24,8 @@ int main () {
 	}
 	
 	for(int j=1;j<151;j++) {
-		for(int k=1;k<300;k++) {
-			if(sieb[k]%(sieb[j]*k)==0) {
+		for(int k=3;k<300;k++) {
+			if(sieb[k]%(sieb[j]==0) {
 				sieb[k]=0;
 			}
 		}
