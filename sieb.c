@@ -39,8 +39,8 @@ int main () {
 		}
 	}
 	
-	arrayFuellen(sieb,size,0);
-	ergebnisAusgeben(sieb,size);
+	//arrayFuellen(sieb,size,0);
+	//ergebnisAusgeben(sieb,size);
 	
 	//Ende
 	printf("\n\n");
