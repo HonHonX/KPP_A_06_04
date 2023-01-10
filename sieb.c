@@ -25,9 +25,9 @@ int main () {
 		sieb[i]=1;
 	}
 	
-	for(int j=1;j<151;j++) {
+	for(int j=2;j<151;j++) {
 		if(sieb[j]!=0) {
-			for(int k=1;k<151;k++) {
+			for(int k=2;k<151;k++) {
 				if(k*j<300) {
 					sieb[k*j]=0;
 				}
