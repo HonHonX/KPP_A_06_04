@@ -25,20 +25,16 @@ int main () {
 		sieb[i]=1;
 	}
 	
-	for(int j=2;j<151;j++) {
-		//if(sieb[j]==1) {
-			for(int k=2;k<151;k++) {
-				if(k*j<300) {
+	for(int j=2;j<=150;j++) {
+		if(sieb[j]==1) {
+			for(int k=2;k<=150;k++) {
+				if((k*j) < 300) {
 					sieb[k*j]=0;
 				}
 		   	}
-		//}
+		}
 	}
 	
-	for(int i=0; i<300; i++){
-		if(sieb[i]==1)
-			sieb[i]=i+1;
-	}
 	ergebnisAusgeben(sieb,299);
 	
 	//Ende
@@ -49,8 +45,8 @@ int main () {
 //Funktionen
 void ergebnisAusgeben(int array[], int size) {
     for(int i=0; i < size; i++) {
-	    if(array[i]!=0) 
-      		printf("%d | ", array[i]);
+	    if(array[i]==i) 
+      		printf("%d | ",i);
     }
     printf("\n");
 }
