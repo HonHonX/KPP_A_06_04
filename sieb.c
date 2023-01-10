@@ -19,17 +19,16 @@ int main () {
 	
 	//Array füllen+
 	
-	int sieb[99];
-	int size=99;
+	int sieb[299];
 	
-	for(int i=0; i<size+1; i++){
+	for(int i=0; i<300; i++){
 		sieb[i]=i+1;
 		printf("%d | ", sieb[i]);
 	}
 	
-	for(int j=1;j<((size/2)+1);j++) {
+	for(int j=1;j<151;j++) {
 		if(sieb[j]!=0) {
-			for(int k=3;k<size+1;k++) {
+			for(int k=3;k<300;k++) {
 				if((sieb[k]%sieb[j]) == 0) {
 					sieb[k]=0;
 				}
@@ -37,7 +36,7 @@ int main () {
 		}
 	}
 	
-	ergebnisAusgeben(sieb, size);
+	ergebnisAusgeben(sieb,299);
 	
 	//Ende
 	printf("\n\n");
