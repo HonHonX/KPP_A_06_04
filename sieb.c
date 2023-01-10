@@ -19,7 +19,7 @@ int main () {
 	
 	//Array füllen+
 	
-	int sieb[size];
+	int sieb[99];
 	int size=sizeof(sieb[]/sieb[0]);
 	
 	for(int i=0; i<size+1; i++){
