@@ -31,8 +31,10 @@ int main () {
 	for(int j=2;j<=(size/2);j++) { //Die Anzahl der Schleifendurchläufe entspricht der Hälfte der Elementanzahl des Arrays
 		if(sieb[j]) { //Die Überprüfung läuft nur, wenn das j.Element des Arrays noch nicht mit einer "0" geflaggt wurde (1=wahr)
 			for(int k=2;k<=(size/2);k++) { //Die Anzahl der Schleifendurchläufe entspricht der Hälfte der Elementanzahl des Arrays
-				if(k*j < size) //Ist das Produkt größer als die Größe des Arrays muss nichts gemacht werden
-					sieb[k*j-1]=0; //Vielfache werden mit der "0" markiert und fallen als Primzahlen raus
+				if(k*j < size) {//Ist das Produkt größer als die Größe des Arrays muss nichts gemacht werden
+					sieb[k*j]=0; //Vielfache werden mit der "0" markiert und fallen als Primzahlen raus
+					printf("%d",k*j);
+				}
 		   	}
 		}
 	}
