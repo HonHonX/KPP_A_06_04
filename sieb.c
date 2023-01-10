@@ -32,10 +32,8 @@ int main () {
 		if(sieb[j]) { //Die Überprüfung läuft nur, wenn das j.Element des Arrays noch nicht mit einer "0" geflaggt wurde (1=wahr)
 			for(int k=2;k<=(size/2);k++) { //Die Anzahl der Schleifendurchläufe entspricht der Hälfte der Elementanzahl des Arrays
 				int temp=k*j;
-				if(temp < size) { //Ist das Produkt größer als die Größe des Arrays muss nichts gemacht werden
+				if(temp < size) //Ist das Produkt größer als die Größe des Arrays muss nichts gemacht werden
 					sieb[temp-1]=0; //Vielfache werden mit der "0" markiert und fallen als Primzahlen raus
-					printf("%d ",temp-1);
-				}
 		   	}
 		}
 	}
@@ -51,6 +49,7 @@ int main () {
 //Funktionen
 int arrayFuellen(int array[], int size, int count) {
 	if(array[count]==1)
+		printf("%d",array[count]);
 		array[count]=count+1;
 	else if (count==size-1)
 		return 0;
