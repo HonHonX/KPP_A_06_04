@@ -29,14 +29,16 @@ int main () {
 	for(int j=1;j<151;j++) {
 		if(sieb[j]!=0) {
 			for(int k=3;k<300;k++) {
-				if((sieb[k]%sieb[j]) == 0) {
+				int x = sieb[k];
+				int y = sieb[j];
+				if(x % y == 0) {
 					sieb[k]=0;
 				}
 		   	}
 		}
 	}
 	
-	//ergebnisAusgeben(sieb,299);
+	ergebnisAusgeben(sieb,299);
 	
 	//Ende
 	printf("\n\n");
