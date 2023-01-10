@@ -44,8 +44,8 @@ int main () {
 
 //Funktionen
 void ergebnisAusgeben(int array[], int size) {
-    for(int i=0; i < size; i++) {
-	    if(array[i]==i) 
+    for(int i=2; i < size+1; i++) {
+	    if(array[i]==1) 
       		printf("%d | ",i);
     }
     printf("\n");
