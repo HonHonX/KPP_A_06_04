@@ -7,12 +7,12 @@ void ergebnisAusgeben(int array[], int size);
 //Hauptprogramm
 int main () {
 	/*
-	*
+	* Sieb des Eratosthenes zur Primzahlbestimmung
 	*/
 	
 	printf("\n *************************************** ");
 	printf("\n *   ^,,,,^   *                        * ");
-	printf("\n *  ( o x o)  *                        * ");
+	printf("\n *  ( o x o)  *  Sieb des Eratosthenes * ");
 	printf("\n *  ( 7   7)  *                        * ");
 	printf("\n *   ´´´´´´   *                ©S.Buch * ");
 	printf("\n *************************************** \n\n");
