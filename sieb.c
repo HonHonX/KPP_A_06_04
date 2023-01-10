@@ -18,8 +18,9 @@ int main () {
 	printf("\n *************************************** \n\n");
 	
 	//Array füllen+
-	int size=99;
+	
 	int sieb[size];
+	int size=sizeof(sieb[]/sieb[0]);
 	
 	for(int i=0; i<size+1; i++){
 		sieb[i]=i+1;
