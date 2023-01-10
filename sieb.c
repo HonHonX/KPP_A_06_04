@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 //Funktions Prototypen
-void ergebnisAusgeben(int array[], int size)
+void ergebnisAusgeben(int array[], int size);
   
 
 //Hauptprogramm
