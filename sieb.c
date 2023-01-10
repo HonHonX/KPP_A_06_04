@@ -34,7 +34,7 @@ int main () {
 				int temp=k*j;
 				if(temp < size) { //Ist das Produkt größer als die Größe des Arrays muss nichts gemacht werden
 					sieb[temp-1]=0; //Vielfache werden mit der "0" markiert und fallen als Primzahlen raus
-					printf("%d",temp-1);
+					printf("%d ",temp-1);
 				}
 		   	}
 		}
