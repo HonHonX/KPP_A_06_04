@@ -31,7 +31,7 @@ int main () {
 		}
 	}
 	
-	ergebnisAusgeben(sieb[], 299);
+	ergebnisAusgeben(sieb[299], 299);
 	
 	//Ende
 	printf("\n\n");
